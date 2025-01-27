@@ -2775,6 +2775,8 @@ p.tags {
     width: 30%; /* Tamaño de la imagen en horizontal */
     border-radius: 10px; /* Bordes redondeados opcionales */
     margin-top: -40px; /* Elimina cualquier margen superior */
+     max-width: 100%; /* La imagen no excederá el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* Texto */
@@ -2814,7 +2816,8 @@ a strong {
     border-radius: 5px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
     margin-top: 10px; /* Ajusta el margen superior */
-}#send-message {
+}
+#send-message {
     padding: 10px 20px; /* Aumenta el padding para hacerlo más grande */
     font-size: 24px; /* Ajusta el tamaño de fuente */
     background-color: #8ebebc; /* Cambia el color de fondo */
@@ -2823,10 +2826,18 @@ a strong {
     border-radius: 5px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
     margin-top: 10px; /* Ajusta el margen superior */
+
+    
+    
+    margin: 5px; /* Espaciado entre botones */
 }
 
 /* Espaciado entre el correo y el botón */
 #email {
     margin-bottom: 5px; /* Reduce el espacio entre el email y el botón */
 
+}
+strong {
+    font-weight: bold; /* Asegura que el texto en strong esté en negrita */
+    color: inherit; /* Hereda el color del texto del elemento padre */
 }
