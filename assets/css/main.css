@@ -2752,3 +2752,81 @@ p.tags {
     z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
     border: 0px solid #FFD700; /* Color del marco (puedes cambiarlo) */
 }
+
+
+/* Estilos generales del contenedor */
+#about .container {
+    text-align: center;
+
+}
+
+/* Contenedor de contenido */
+.about-content {
+    display: flex; /* Usamos Flexbox para alinear en horizontal */
+    align-items: center; /* Centra verticalmente la imagen y el texto */
+    justify-content: space-between; /* Espaciado entre imagen y texto */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+    flex-wrap: wrap; /* Permite que los elementos se reorganicen si no hay espacio */
+
+}
+
+/* Imagen */
+.about-image {
+    width: 30%; /* Tamaño de la imagen en horizontal */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    margin-top: -40px; /* Elimina cualquier margen superior */
+}
+
+/* Texto */
+.about-text {
+    width: 65%; /* Tamaño del texto en horizontal */
+    text-align: left; /* Alinear texto a la izquierda */
+    margin-top: -20px; /* Elimina cualquier margen superior */
+    line-height: 1.8; /* Ajusta el espacio entre líneas */
+}
+
+/* En pantallas pequeñas, ajusta a vertical */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Cambia a disposición vertical */
+        text-align: center; /* Centra todo */
+    }
+
+    .about-image, .about-text {
+        width: 100%; /* Asegura que ambos ocupen todo el ancho */
+    }
+}
+
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a strong {
+    font-weight: bold; /* Asegura que el texto en strong esté en negrita */
+}/* Estilo del botón */
+#copy-email {
+    padding: 10px 20px; /* Aumenta el padding para hacerlo más grande */
+    font-size: 24px; /* Ajusta el tamaño de fuente */
+    background-color: #8ebebc; /* Cambia el color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    margin-top: 10px; /* Ajusta el margen superior */
+}#send-message {
+    padding: 10px 20px; /* Aumenta el padding para hacerlo más grande */
+    font-size: 24px; /* Ajusta el tamaño de fuente */
+    background-color: #8ebebc; /* Cambia el color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    margin-top: 10px; /* Ajusta el margen superior */
+}
+
+/* Espaciado entre el correo y el botón */
+#email {
+    margin-bottom: 5px; /* Reduce el espacio entre el email y el botón */
+
+}
