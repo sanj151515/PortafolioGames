@@ -2763,7 +2763,7 @@ p.tags {
 /* Contenedor de contenido */
 .about-content {
     display: flex; /* Usamos Flexbox para alinear en horizontal */
-    align-items: center; /* Centra verticalmente la imagen y el texto */
+    align-items: flex-start; /* Centra verticalmente la imagen y el texto */
     justify-content: space-between; /* Espaciado entre imagen y texto */
     gap: 20px; /* Espaciado entre la imagen y el texto */
     flex-wrap: wrap; /* Permite que los elementos se reorganicen si no hay espacio */
@@ -2772,12 +2772,15 @@ p.tags {
 
 /* Imagen */
 .about-image {
-    width: 30%; /* Tamaño de la imagen en horizontal */
+    width: 30%; /* Ajusta el tamaño horizontal deseado */
+    max-width: 100%; /* Asegura que no exceda el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto; /* Centra la imagen si es necesario */
     border-radius: 10px; /* Bordes redondeados opcionales */
     margin-top: -40px; /* Elimina cualquier margen superior */
-     max-width: 100%; /* La imagen no excederá el ancho de su contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
 }
+
 
 /* Texto */
 .about-text {
