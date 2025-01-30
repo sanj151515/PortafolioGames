@@ -1982,7 +1982,7 @@ input, select, textarea {
 
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
-		margin-bottom: 40px;
+		margin-bottom: 0px;
 	}
 
 		.item header {
@@ -1992,9 +1992,10 @@ input, select, textarea {
 			font-size: 0.8em;
 		}
 
-			.item header h3 {
+			.item header h2 {
 				font-size: 1em;
 			}
+
 
 /* Icons */
 
@@ -2736,8 +2737,9 @@ input, select, textarea {
 }
 
 p.tags {
-    margin-top: -10px; /* Elimina el espacio superior */
+    margin-top: -3px; /* Elimina el espacio superior */
     font-size: 18px; /* Ajusta el tamaño del texto, si es necesario */
+    line-height: 1; /* Ajusta el espacio entre líneas */
 }
 .price-tag {
     position: absolute; /* Posición absoluta dentro del contenedor de imagen */
@@ -2858,3 +2860,72 @@ strong {
         gap: 15px; /* Ajusta el espacio para dispositivos pequeños */
     }
 }
+
+
+
+.game-category {
+    margin-bottom: 10px; /* Espacio entre cada sección */
+    padding: 10px;
+    border-radius: 2px; /* Bordes redondeados para mejor estética */
+    background: #f8f8f8; /* Color de fondo suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar */
+}
+
+.game-category h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.game-category p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 3px;
+}
+
+.game-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.game-category ul li {
+    font-size: 18px;
+    color: #444;
+    line-height: 1;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+/* Agrega un icono decorativo a cada elemento de la lista */
+.game-category ul li::before {
+    content: "●"; /* Cambia el check (✔) por un círculo negro (●) */
+    color: #000; /* Color negro */
+    font-weight: bold;
+    position: relative; /* Cambiado de absolute a relative */
+    left: -5px; /* Ajusta la posición para que no haya tanto espacio */
+    margin-right: 5px; /* Espaciado menor entre el ícono y el texto */
+}
+
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .game-category {
+        padding: 18px;
+        margin-bottom: 3px;
+    }
+
+    .game-category h3 {
+        font-size: 20px;
+    }
+
+    .game-category p, .game-category ul li {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
