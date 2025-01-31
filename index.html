@@ -341,18 +341,7 @@
             document.getElementById('videoModal').style.display = 'none';
         }
     </script>
-    <script>
-    document.getElementById('copy-email').addEventListener('click', function() {
-        const emailText = document.getElementById('email').innerText;
-        navigator.clipboard.writeText(emailText)
-            .then(() => {
-                alert('Email copiado: ' + emailText);
-            })
-            .catch(err => {
-                console.error('Error al copiar el email: ', err);
-            });
-    });
-</script>
+   
 <script>
     // Agrega un evento de clic al botón "Enviar Mensaje"
     document.getElementById('send-message').addEventListener('click', function() {
