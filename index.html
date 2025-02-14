@@ -28,7 +28,7 @@
 
 
 
-<link rel="icon" href="icon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 	</head>
 
@@ -40,8 +40,8 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/logo final perfil.png" alt="" /></span>
-							<h1 id="title">Neko Fantasy</h1>
+							<span class="image avatar48"><img src="images/icon.png" alt="" /></span>
+							<h1 id="title">Digital Jameko</h1>
 							<p>Video Game Developer</p>
 						</div>
 
@@ -50,7 +50,7 @@
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Us</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -76,7 +76,7 @@
 		<!-- Main -->
 			<div id="main">
 				<!-- Intro -->
-					<section style="background: #000010 url('images/newLogo24.png') no-repeat center center; background-size: contain; height: 30vh; width: 100%;"></section>
+					<section style="background: #000010 url('images/banner.png') no-repeat center center; background-size: contain; height: 30vh; width: 100%;"></section>
 					<section id="contact" class="four">
 						<div class="container">
 <p style="margin-top: 0px; margin-bottom: 0px;">
@@ -98,7 +98,7 @@
 
 
 						<!-- Sección: Videojuegos para Universidad -->
-						<section class="game-category">
+						<section class="game-category"  id="university-section">
     						<h2>🎓 Videojuegos para Universidad</h2>
     						<p>Desarrollo de videojuegos para <strong>proyectos de grado, tesis o investigaciones académicas</strong> en universidades a nivel licenciatura, maestría o doctorado. Estos juegos pueden servir como demostraciones interactivas, simulaciones o herramientas educativas.</p>
     						<ul>	
@@ -144,14 +144,33 @@
         <p class="tags">Tags: 3D, 3ra Persona, Aventura, Educativo, Exploración</p>
     </article>
 
+
+            <!-- Agrega aquí los artículos adicionales que deseas mostrar -->
+            <article class="item" data-more="true" style="display: none;" >
+        <a href="#" class="image fit" onclick="openVideo('https://www.youtube.com/embed/WV7Y9jULSb8'); return false;">
+            <div class="image-overlay">
+                <img src="https://img.youtube.com/vi/WV7Y9jULSb8/maxresdefault.jpg" alt="" />
+                <div class="overlay-dark"></div>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+                <div class="price-tag">$100 USD</div>
+            </div>
+        </a>
+        <h3 class="video-title">Precaución en las calles</h3>
+        <p class="tags">Tags: 2D, Top Down, Aventura, Educativo, Exploración</p>
+    </article>
+            
+
+
+
 </div>
+<button class="toggle-button" onclick="toggleItems('university-section')">Ver más...</button>
 						</section>
 
 
 
 <p></p>
 							<!-- Sección: Juegos Publicitarios para Empresas -->
-							<section class="game-category">
+							<section class="game-category" id="business-section">
     							<h2>🏢 Juegos Publicitarios para Empresas</h2>
     							<p>Videojuegos diseñados para <strong>promocionar y exhibir la marca de una empresa</strong> en eventos, ferias comerciales o stands con TV-Tótems. Ideales para atraer clientes y reforzar la identidad de la marca mediante experiencias interactivas.</p>
     							<ul>
@@ -205,15 +224,27 @@
     								<p class="tags">Tags: 2D, Plataforma, Hyper Casual, Publicitario</p>
 									</article>
 									
-								
+								 <article class="item" data-more="true" style="display: none;" >
+        <a href="#" class="image fit" onclick="openVideo('https://www.youtube.com/embed/zLIucAotU8U'); return false;">
+            <div class="image-overlay">
+                <img src="https://img.youtube.com/vi/zLIucAotU8U/maxresdefault.jpg" alt="" />
+                <div class="overlay-dark"></div>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+                <div class="price-tag">$120 USD</div>
+            </div>
+        </a>
+        <h3 class="video-title">La Guerra del Chaco</h3>
+        <p class="tags">Tags: 2D, Plataforma, Shoot 'em up, Acción, Aventura</p>
+    </article>
 							</div>
+							 <button class="toggle-button" onclick="toggleItems('business-section')"  style="display: none;" >Ver más...</button>
 							</section>
 
 							
 							
 <p></p>
 							<!-- Sección: Juegos Indie para Publicación y Venta Digital -->
-							<section class="game-category">
+							<section class="game-category" id="indes-section">
     							<h2>🎮 Juegos Indie para Publicación y Venta Digital</h2>
     							<p>Videojuegos creados para <strong>desarrolladores y creadores que buscan vender su juego</strong> en plataformas como PlayStore, Steam o monetizarlo mediante anuncios y microtransacciones. Pensados para ofrecer una experiencia más pulida y atractiva para el mercado digital.</p>
     							<ul>
@@ -261,8 +292,20 @@
         <h3 class="video-title">Mystic Cats</h3>
         <p class="tags">Tags: 2D, Rogue Like, Online, Narrative, multi-language, RPG, Ads, In-app punishment</p>
     </article>					
-								
+								 <article class="item" data-more="true" style="display: none;" >
+        <a href="#" class="image fit" onclick="openVideo('https://www.youtube.com/embed/zLIucAotU8U'); return false;">
+            <div class="image-overlay">
+                <img src="https://img.youtube.com/vi/zLIucAotU8U/maxresdefault.jpg" alt="" />
+                <div class="overlay-dark"></div>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+                <div class="price-tag">$120 USD</div>
+            </div>
+        </a>
+        <h3 class="video-title">La Guerra del Chaco</h3>
+        <p class="tags">Tags: 2D, Plataforma, Shoot 'em up, Acción, Aventura</p>
+    </article>
 							</div>
+							 <button class="toggle-button" onclick="toggleItems('indes-section')"  style="display: none;" >Ver más...</button>
 							</section>
 
 							
@@ -277,17 +320,21 @@
 					<section id="about" class="three">
    						 <div class="container">
        						 <header>
-          				  		<h2>About Me</h2>
+          				  		<h2>About Us</h2>
        						 </header>
 
        					 <div class="about-content">
    						 <img src="images/foto.jpg" alt="About Image" class="about-image" />
     						<p class="about-text">
-     					   <b style="font-weight: bold;">Hola</b>, soy <b style="font-weight: bold;">Alvaro Nogales</b>, desarrollador de videojuegos <b style="font-weight: bold;">GAME DEV.</b><br>
-      					  Me encargo de planificar proyectos, calcular presupuestos, programar la lógica del juego, realizar pruebas, y entregar el producto final en forma de ejecutable.<br>
-      					  Cuento con amplia experiencia en el área, habiendo trabajado en empresas de videojuegos y como freelancer en proyectos tanto pequeños como de gran escala.<br>
-        				Tengo mi propio estudio y desarrollo proyectos personales de los que puedes conocer más a través de mis 	<a href="https://linktr.ee/neko_dev" target="_blank" rel="noopener noreferrer"><strong>redes sociales</strong>.</a><br>
-       					 Contáctame, y juntos haremos tu videojuego realidad.
+
+Nuestro estudio de <b style="font-weight: bold;">desarrollo de videojuegos</b>
+ayuda a empresas a destacar con videojuegos para sus <b style="font-weight: bold;">stands en ferias</b> y estrategias de <b style="font-weight: bold;">marketing</b>.  <br>
+Cada videojuego que desarrollamos está diseñado para captar la atención del público y reforzar la identidad de marca de nuestros clientes. <br>
+Contamos con experiencia en proyectos de diversas escalas, desde títulos independientes hasta colaboraciones con empresas.
+Además, hemos participado y obtenido reconocimientos en concursos y eventos a nivel nacional e internacional.<br>
+<b style="font-weight: bold;">¡Escríbenos</b>  y hagamos que tu <b style="font-weight: bold;">marca</b>  se destaque con un <b style="font-weight: bold;">videojuego</b>  único!  
+
+
    							 </p>
 						</div>
 
@@ -302,12 +349,14 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p style="margin-top: -40px; margin-bottom: 0px;">
-    Envíame un mensaje con los detalles básicos de tu juego, incluyendo el nombre de un juego de referencia, y puedes mencionar uno de los juegos de mi portafolio. Esto me ayudará a calcular un presupuesto.
+<p style="margin-top: -40px; margin-bottom: 0px;">
+    Envíanos un mensaje con los detalles básicos de tu juego, y menciona alguno de los juegos de nuestro portafolio.</br> 
+    Esto nos ayudará a elaborar una cotización adecuada.
 </p>
-    <p id="email" style="font-weight: bold;">nekodev0w0@gmail.com</p>
-   
-     <button id="send-message">Enviar Mensaje</button>
+<p id="email" style="font-weight: bold;">Correo: nekodev0w0@gmail.com</p>
+<p style="font-weight: bold;">WhatsApp (Bolivia): <a href="https://wa.me/59178951931" target="_blank" rel="noopener noreferrer">+591 78951931</a>,  <a href="https://wa.me/59176509592" target="_blank" rel="noopener noreferrer">+591 76509592</a></p>
+<button id="send-message">Enviar Correo</button>
+
 
 						</div>
 					</section>
@@ -342,6 +391,27 @@
             document.getElementById('videoIframe').src = ''; // Detiene el video
             document.getElementById('videoModal').style.display = 'none';
         }
+
+   function toggleItems(sectionId) {
+    const moreItems = document.querySelectorAll(`#${sectionId} article[data-more="true"]`); // Selecciona todos los elementos con data-more en la sección específica
+    const toggleButton = document.querySelector(`#${sectionId} .toggle-button`);
+
+    let isVisible = Array.from(moreItems).some(item => item.style.display === 'block');
+
+    if (!isVisible) {
+        moreItems.forEach(item => {
+            item.style.display = 'block'; // Muestra los artículos adicionales
+        });
+        toggleButton.textContent = "Ver menos...";
+    } else {
+        moreItems.forEach(item => {
+            item.style.display = 'none'; // Oculta los artículos adicionales
+        });
+        toggleButton.textContent = "Ver más...";
+    }
+}
+
+
     </script>
    
 <script>

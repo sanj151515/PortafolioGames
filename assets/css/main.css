@@ -2848,10 +2848,11 @@ strong {
 }
 
 .games-container {
-    display: grid;
+  display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
     gap: 20px; /* Espaciado entre artículos */
     padding: 10px;
+    
 }
 
 @media screen and (max-width: 768px) {
